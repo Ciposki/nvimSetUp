@@ -94,7 +94,6 @@ return {
 				"  ;;;;;;+++++XXXXxxxXxXXxxxXxXXXxxxxXxxxx           ",
 			}
 
-			dashboard.section.header.val = nike
 			local quotes = {
 				{
 					"Software is like sex:",
@@ -360,21 +359,22 @@ return {
 					"of which the center is everywhere and the circumference is nowhere.",
 					"- Empedocles",
 				},
-    { 
-      "I'm an egotistical bastard,",
-      "and I name all my projects after myself.",
-      "First 'Linux', now 'git.",
-      "- Linus Torvalds"
-    },
+				{
+					"I'm an egotistical bastard,",
+					"and I name all my projects after myself.",
+					"First 'Linux', now 'git.",
+					"- Linus Torvalds",
+				},
 			}
-
+      dashboard.section.header.opts.hl= "GruvboxAqua"
+			dashboard.section.header.val = nike
 			-- Set random quote
 			dashboard.section.footer.val = center_quote(quotes[math.random(#quotes)])
 
 			-- Set menu
 			dashboard.section.buttons.val = {
 				dashboard.button("f", "  > Find file", ":Telescope find_files<CR>"),
-				dashboard.button("s", "  > Settings", ":Oil --float C:/Users/Lenovo/AppData/Local/nvim<CR>"),
+				-- dashboard.button("s", "  > Settings", ":Oil --float C:/Users/Lenovo/AppData/Local/nvim<CR>"),
 				dashboard.button("q", "  > Quit NVIM", ":qa<CR>"),
 			}
 
