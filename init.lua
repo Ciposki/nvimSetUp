@@ -4,11 +4,10 @@ vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
 vim.cmd("set number")
 vim.wo.relativenumber=true
-vim.opt.fillchars = {eob = " dsad"}
+vim.opt.fillchars = {eob = " "}
 require("config.lazy")
-vim.keymap.set('n', '', '', {})
---Key Bindvim.keymap.set('n', '', '', {})s
--- Change Tab
+--Key Bind
+--Change Tab
 vim.keymap.set('n', '<Leader>w', ':write<CR>')
 vim.keymap.set('n', '<Leader>a', ':wqa<CR>')
 vim.keymap.set('n', '<Leader>x', ':wq<CR>')
