@@ -19,6 +19,10 @@ vim.keymap.set('i', ';a', '<esc>:wqa<CR>')
 
 -- map for quick open the file init.lua
 vim.keymap.set('n', '<leader>nv', ':vsplit ~/.config/nvim/init.lua<cr>', {})
+
+
 vim.keymap.set('n','<leader>-', 'g-', {})
 vim.keymap.set('n','<leader>=', 'g+', {})
+
+vim.keymap.set('n','<leader>te', ':terminal<CR>i', {})
 
